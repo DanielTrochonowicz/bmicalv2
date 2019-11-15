@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css?version=160">
+
+</head>
+<title>Kalkulator BMI/BMR</title>
+<div class="grid-container">
+    </head>
+    <body>
+
+    <div class="center">
+        <form action="/calculate">
+            <div class = "flex-container">
+
+                <strong> <h3>Oblicz BMI i BMR</h3></strong>
+                <strong><h2 id="text2">Wprowadź dane</h2>
+
+                    <p> Wybierz płeć:</p> <input type="radio" value="male" name="gender" checked >Mężczyzna</input>
+
+                    <input type="radio" value="female"  name="gender">Kobieta</input></strong>
+                <strong>
+
+                    <div>
+                        <p><input type="number"  name="weight" placeholder="Waga [kg]"   min="1" max="250" autocomplete="off"  maxlength="3" minlength="2" required></p>
+                        <p><input type="number" name="height" placeholder="Wzrost [cm]" min="1" max="250" autocomplete="off"  maxlength="3" minlength="2"required></p>
+                        <p> <input type="number" name="age" placeholder="Wiek" min="1" max="120"  autocomplete="off"  maxlength="3" minlength="2"required ></p>
+
+
+                    </div>
+
+
+                    <select name="activity" required>&nbsp&nbsp
+                        <option value="lazy"> Brak aktywności, praca siedząca</option>
+                        <option value="low"> Niska aktywność (praca siedząca i 1-2 treningi w tygodniu)</option>
+                        <option value="regular">Średnia aktywność (praca siedząca i treningi 3-4 razy w tygodniu) </option>
+                        <option value="sport"> Wysoka aktywność (praca fizyczna i 3-4 treningi w tygodniu)</option>
+                        <option value="pro"> Bardzo wysoka aktywność (sportowcy, osoby codziennie trenujące)</option>
+                    </select>
+
+                    <div><p><input type="reset" value="Wyczyść dane"class="myButton2"></p>
+                        <p><input type="submit" value="Wyślij"class="myButton2"></p>
+                    </div>
+                </strong>
+            </div> </strong>
+
+
+
+
+        </form>
+
+    </div>
+
+    <div class="left">
+        <script type="text/javascript">
+            function ne(o) {
+                if (document.getElementById(o).style.display == '') document.getElementById(o).style.display = 'none';
+                else document.getElementById(o).style.display = '';
+            }
+        </script>
+
+        <br>
+        <div class="myButton2">
+            <div onclick="ne('o4')">Metoda Mifflin-St Jeor</div>
+        </div>
+
+        <div id="o4" style="display:none;">
+            <p></p>
+            <p id="text">Metoda Mifflin-St Jeor jest uważana za bardziej dostosowaną do współczesnego człowieka i jego metabolizmu niż metoda Harrisa-Benedicta.
+                Została opracowana w 2005 roku przez lekarzy: Mifflina i St Jeora. Tę metodę obliczania wskaźnika BMR zaakceptowało Amerykańskie Stowarzyszenie
+                Dietetyczne, a po nim już cały świat. Ten wzór również wymaga uwzględnienia jedynie trzech współczynników: masy ciała, wieku i wzrostu..</p>
+        </div>
+
+        <p></p>
+
+        <div class="myButton2">
+            <div onclick="ne('o3')">Zakresy wartości indeksu BMI</div>
+        </div>
+        <div id="o3" style="display:none;">
+            <p></p>
+            <ul>
+                <li>16,0 – wygłodzenie</li>
+                <li>16,0–16,99 – wychudzenie</li>
+                <li>17,0–18,49 – niedowaga</li>
+                <li>18,5–24,99 – wartość prawidłowa</li>
+                <li>25,0–29,99 – nadwaga</li>
+                <li>30,0–34,99 – I stopień otyłości</li>
+                <li>35,0–39,99 – II stopień otyłości (otyłość kliniczna)</li>
+                <li>≥ 40,0 – III stopień otyłości (otyłość skrajna)</li>
+            </ul>
+        </div>
+
+        <p></p>
+
+        <div class="myButton2">
+            <div onclick="ne('o1')" text-align="center">Czym jest indeks BMI?</div>
+        </div>
+        <div id="o1" style="display:none;">
+            <p></p>
+            <p id="text"> Wskaźnik BMI (body mass index, indeks masy ciała) to prosty wzór matematyczny, który w sposób pośredni opisuje zawartość tkanki tłuszczowej
+                w organizmie na podstawie proporcji masy ciała mierzonej w kilogramach do wzrostu w metrach. Stosowany jest dla dorosłych kobiet i mężczyzn w każdym wieku.</p>
+        </div>
+        <p></p>
+
+        <div class="myButton2">
+            <div onclick="ne('o2')" text-align="center">Czym jest wskaźnik BMR?</div>
+        </div>
+        <div id="o2" style="display:none;">
+            <p></p>
+            <p id="text">  Wskaźnik BMR (Basal Metabolic Rate, wskaźnik podstawowej przemiany materii)
+                jest minimalnym dziennym zapotrzebowaniem energetycznym koniecznym do podtrzymania podstawowych procesów życiowych ciała w spoczynku.</p>
+        </div>
+        <p></p>
+
+    </div>
+
+    </body>
+</div>
+</html>
+
+
+

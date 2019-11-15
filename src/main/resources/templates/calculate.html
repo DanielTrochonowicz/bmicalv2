@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css?version=160">
+    <title>Kalkulator BMI</title>
+<body>
+<br><br>
+<h3 style="text-align: center; "><p th:text="${description}"></p></h3> <br>
+<h3 style="text-align: center; "><p th:text="${bmr}" ></p></h3><br>
+<h3 style="text-align: center; "><p th:text="${perfectWeight}"></p></h3>
+<div class align="center">
+
+    <input type="button" style="background-color: #0ade1a; color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding: 9px 24px;
+    width: 200px; box-shadow: inset 1px 0px 0px -3px #0ade1a;
+    text-decoration: none;  border-radius: 42px" value="Wstecz"  onClick="history.back();" /></div>
+</body>
+</head>
+</html>
