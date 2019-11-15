@@ -1,0 +1,167 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(248, 255, 216, 0);
+    text-align: center;
+    float: left;
+    line-height: 25px;
+    font-size: 15px;
+    height: 455px;
+    margin: 10px;
+}
+
+select {
+    grid-area: center;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    border: 0.5px rgba(204, 204, 204, 0.7);
+    margin-bottom: 20px;
+
+}
+
+.center {
+    grid-area: center;
+    family-font: "Times New Roman", Times, serif;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-left:160px;
+    border: 5px rgba(204, 204, 204, 0.7);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width:35%;
+}
+
+.left {
+    grid-area: left;
+    family-font: "Times New Roman", Times, serif;
+    color: black;
+    text-align: center;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 50px;
+    border: 0.5px rgba(204, 204, 204, 0.7);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 95%;
+}
+
+.myButton {
+    -moz-box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    -webkit-box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    box-shadow: inset 1px 0px 0px -3px #5b80a5;;
+    background-color: #5b80a5;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding: 9px 24px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #6a428a;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.myButton2 {
+    -moz-box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    -webkit-box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    background-color: #5b80a5;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding: 9px 24px;
+    width: 200px;
+    text-decoration: none;
+}
+
+.myButton3 {
+    -moz-box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    -webkit-box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    box-shadow: inset 1px 0px 0px -3px #5b80a5;
+    background-color: #0ade1a;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding: 9px 24px;
+    width: 200px;
+    text-decoration: none;
+}
+.myButton3:active {
+    position: relative;
+    top: 1px;
+}
+
+.myButton2:hover {
+    background-color: #6a428a;
+}
+
+.myButton2:active {
+    position: relative;
+    top: 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left center";
+    grid-gap: 0px 50px;
+}
+
+#text {
+    padding: 15px;
+    padding-left: 15px;
+}
+
+#text2 {
+    font-size: 12pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1{
+    color: black;
+    family-font: "Times New Roman", Times, serif;
+    font-size: 24pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3{
+    color: black;
+    family-font: "Times New Roman", Times, serif;
+    font-size: 16pt;
+    text-align: center;
+    font-weight: bold;
+}
+
