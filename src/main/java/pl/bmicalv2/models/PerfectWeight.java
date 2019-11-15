@@ -35,4 +35,5 @@ public class PerfectWeight {
                 decimalFormat.format((0.0001 * height * height * 18.5)) + "Kg - " +
                 decimalFormat.format((0.0001 * height * height * 25)) + "Kg";
     }
+
 }
